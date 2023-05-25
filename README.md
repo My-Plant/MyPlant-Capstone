@@ -29,7 +29,9 @@ GET http://127.0.0.1:8080/penyakit/2
    {
        "id": "2",
        "nama": "Bintik",
-       "deskripsi": "Bintik adalah penyakit tanaman yang disebabkan oleh ulat dan dapat merusak daun"
+       "deskripsi": "Bintik adalah penyakit tanaman yang disebabkan oleh ulat dan dapat merusak daun",
+       "faktor": string,
+       "saran": string
     }
 ```
 
