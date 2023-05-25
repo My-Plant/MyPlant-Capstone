@@ -57,8 +57,6 @@ GET http://127.0.0.1:8080/penyakit/2
 
 ## Status Codes
 
-Gophish returns the following status codes in its API:
-
 | Status Code | Description |
 | :--- | :--- |
 | 200 | `OK` |
