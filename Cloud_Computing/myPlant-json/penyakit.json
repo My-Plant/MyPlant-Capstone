@@ -2,11 +2,15 @@
     {
         "id": "1",
         "nama": "Jamur",
-        "deskripsi": "Jamur adalah penyakit tanaman yang membuat tanaman layu dan rusak"
+        "deskripsi": "Jamur adalah penyakit tanaman yang membuat tanaman layu dan rusak",
+        "faktor": "....",
+        "saran": "....."
     },
     {
         "id": "2",
         "nama": "Bintik",
-        "deskripsi": "Bintik adalah penyakit tanaman yang disebabkan oleh ulat dan dapat merusak daun"
+        "deskripsi": "Bintik adalah penyakit tanaman yang disebabkan oleh ulat dan dapat merusak daun",
+        "faktor": "....",
+        "saran": "....."
     }
 ]
