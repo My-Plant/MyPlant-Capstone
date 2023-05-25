@@ -11,7 +11,7 @@ def welcome():
 
 #Menampilkan list data penyakit
 @app.route('/penyakit', methods=['GET'])
-def getPenyakit():
+def pagePenyakit():
     filtered_data = [{"nama": penyakit['nama'], "deskripsi": penyakit['deskripsi']} for penyakit in data]
     return jsonify(filtered_data)
 
