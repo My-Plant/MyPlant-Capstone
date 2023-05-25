@@ -16,7 +16,7 @@ GET http://127.0.0.1:8080/penyakit
        "id": "1",
        "nama": "Jamur",
        "deskripsi": "Jamur adalah penyakit tanaman yang membuat tanaman layu dan rusak"
-    ,
+    }
 ```
 ## Penyakit (id)
 ```http
@@ -30,7 +30,7 @@ GET http://127.0.0.1:8080/penyakit/2
        "id": "2",
        "nama": "Bintik",
        "deskripsi": "Bintik adalah penyakit tanaman yang disebabkan oleh ulat dan dapat merusak daun"
-    ,
+    }
 ```
 
 `id` = id dari penyakit
