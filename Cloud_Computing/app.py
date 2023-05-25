@@ -23,4 +23,4 @@ def namaPenyakit(penyakit):
             return jsonify(penyakit_data)
     return jsonify({'message': 'Penyakit not found'})
 
-#predict (ml)
+#predict endpoint (ml)
