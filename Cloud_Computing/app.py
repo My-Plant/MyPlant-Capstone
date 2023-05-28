@@ -1,4 +1,4 @@
-import uuid
+# import uuid
 import firebase_admin
 import keras
 import io
@@ -6,7 +6,6 @@ import requests
 import numpy as np
 import os
 import tensorflow as tf
-
 
 from flask import Flask, request, jsonify, json
 from firebase_admin import credentials, auth, firestore
@@ -47,8 +46,8 @@ firebase = firebase_admin.initialize_app(cred)
 #     except:
 #         return {'msg':'Email atau Password Salah'}, 400
 
-# with open('myPlant-json/penyakit.json') as json_file:
-#     data = json.load(json_file)
+with open('myPlant-json/penyakit.json') as json_file:
+    data = json.load(json_file)
 
 @app.route('/', methods = ['GET'])
 def welcome():
@@ -83,7 +82,7 @@ def load_image_from_url(image_url):
     return img_tensor
 
 #Load Model
-model_url = "https://storage.googleapis.com/myplant_storage/Model_1.h5"  # Replace with the correct model URL
+model_url = "https://storage.googleapis.com/myplant_storage/Model_1.h5"  # Model di Google Cloud Storage
 model_response = requests.get(model_url)
 model_file_path = "model.h5"  # Local file path to save the model
 with open(model_file_path, "wb") as f:
