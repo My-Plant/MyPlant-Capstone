@@ -7,7 +7,7 @@ import numpy as np
 import os
 import tensorflow as tf
 
-
+from google.cloud import storage
 from PIL import Image
 from flask import Flask, request, jsonify, json
 # from firebase_admin import credentials, firestore
@@ -24,6 +24,12 @@ model = tf.keras.models.load_model('app/models/Model_1.h5')
 with open('app/myPlant-json/penyakit.json') as json_file:
     contoh = json.load(json_file)
 
+
+# Initialize Google Cloud Storage client
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'credentials.json'
+storage_client = storage.Client()
+bucket_name = 'myplant'  # Replace with your actual bucket name
+bucket = storage_client.bucket(bucket_name)
 
 # Tes Utama
 @app.route('/', methods=['GET'])
@@ -66,23 +72,27 @@ def read_image(img):
 def predict():
     if 'file' not in request.files:
         return "Please try again. The Image doesn't exist"
-    
+
     file = request.files.get('file')
 
     if not file:
-        return
+        return "Please try again. The Image doesn't exist"
 
     # Membaca input file
     img_bytes = file.read()
 
-    basepath = os.path.dirname(__file__)
-    file_path = os.path.join(
-        basepath, 'uploads', secure_filename(file.filename))
-    file.save(file_path)
+    # Generate a unique filename for the uploaded image
+    filename = secure_filename(file.filename)
+    blob = bucket.blob(filename)
+
+    # Upload the image to Google Cloud Storage
+    blob.upload_from_string(img_bytes, content_type='image/jpeg')
+
+    # Get the public URL of the uploaded image
+    image_url = blob.public_url
 
     # File image untuk prediksi
     images = read_image(img_bytes)
-
 
     try:
         prediction_labels = [
@@ -109,10 +119,12 @@ def predict():
         result = prediction_labels[prediction]
 
         return {
-            'prediction': result
+            'prediction': result,
+            'image_url': image_url
         }
     except Exception as e:
         return jsonify({"error": str(e)})
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=5000)
