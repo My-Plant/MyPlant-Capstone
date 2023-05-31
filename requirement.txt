@@ -1,7 +1,0 @@
-Flask
-Pillow
-keras
-tensorflow
-numpy
-requests
-gunicorn

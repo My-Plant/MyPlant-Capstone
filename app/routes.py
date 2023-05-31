@@ -1,68 +1,92 @@
 # Import necessary modules
 import firebase_admin
-from flask import Flask, request, jsonify, json
-from firebase_admin import credentials, firestore
 from PIL import Image
 import io
 import requests
 import numpy as np
 import os
 import tensorflow as tf
+
+
+from PIL import Image
+from flask import Flask, request, jsonify, json
+from firebase_admin import credentials, firestore
 from keras.models import load_model
+from werkzeug.utils import secure_filename
 
 # Initialize Flask app
 from app import app
 
 # Load Firebase service account credentials
 
-# Load the model
-model_url = "https://storage.googleapis.com/myplant_storage/Model_1.h5"
-model_response = requests.get(model_url)
-model_file_path = "model.h5"
-with open(model_file_path, "wb") as f:
-    f.write(model_response.content)
-model = load_model(model_file_path)
+# Load model
+model = tf.keras.models.load_model('app/models/Model_1.h5')
 
-# Load the penyakit data
+# Load penyakit data
 with open('app/myPlant-json/penyakit.json') as json_file:
-    data = json.load(json_file)
+    contoh = json.load(json_file)
 
-# Define routes and endpoints
+
+# Tes Utama
 @app.route('/', methods=['GET'])
 def welcome():
     return "Response Success!"
 
+
+# Endpoint untuk menampilkan semua penyakit
 @app.route('/penyakit', methods=['GET'])
 def pagePenyakit():
-    filtered_data = [{"nama": penyakit['nama'], "deskripsi": penyakit['deskripsi']} for penyakit in data]
+    try:
+        filtered_data = [{"nama": penyakit['nama'], "deskripsi": penyakit['deskripsi']} for penyakit in contoh]
+    except:
+        return jsonify({'Nama penyakit tidak ditemukan'})
     return jsonify(filtered_data), 200
 
+
+# Endpoint menampilkan penyakit berdasarkan id
 @app.route('/penyakit/<string:penyakit>', methods=['GET'])
 def namaPenyakit(penyakit):
     penyakit_id = penyakit
-    for penyakit_data in data:
+    for penyakit_data in contoh:
         if penyakit_data['id'] == penyakit_id:
             return jsonify(penyakit_data), 200
     return jsonify({'message': 'Penyakit tidak ditemukan!'}), 400
 
-def load_image_from_url(image_url):
-    response = requests.get(image_url)
-    img = Image.open(io.BytesIO(response.content))
+
+# Preprocessing Gambar
+def read_image(img):
+    img = Image.open(io.BytesIO(img))
     img = img.resize((224, 224))
     img_tensor = tf.keras.preprocessing.image.img_to_array(img)
     img_tensor = np.expand_dims(img_tensor, axis=0)
     img_tensor /= 255.0
     return img_tensor
 
-@app.route("/predict", methods=["GET", "POST"])
-def predict():
-    if "image_url" not in request.args:
-        return jsonify({"error": "no image_url"})
 
-    image_url = request.args.get("image_url")
+# Prediksi Penyakit Tanaman
+@app.route("/predict", methods=['POST'])
+def predict():
+    if 'file' not in request.files:
+        return "Please try again. The Image doesn't exist"
+    
+    file = request.files.get('file')
+
+    if not file:
+        return
+
+    # Membaca input file
+    img_bytes = file.read()
+
+    basepath = os.path.dirname(__file__)
+    file_path = os.path.join(
+        basepath, 'uploads', secure_filename(file.filename))
+    file.save(file_path)
+
+    # File image untuk prediksi
+    images = read_image(img_bytes)
+
 
     try:
-        new_image = load_image_from_url(image_url)
         prediction_labels = [
             "Apple Scab",
             "Apple Black Rot",
@@ -83,14 +107,11 @@ def predict():
             "Strawberry Healthy"
         ]
 
-        prediction = np.argmax(model.predict(new_image)[0])
+        prediction = np.argmax(model.predict(images)[0])
         result = prediction_labels[prediction]
 
-        data = {"prediction": result}
-
-        return jsonify(data)
+        return {
+            'prediction': result
+        }
     except Exception as e:
         return jsonify({"error": str(e)})
-
-# Remove the model file after using
-os.remove(model_file_path)
