@@ -7,7 +7,7 @@ myPlant Cloud Computing
 
 ## Run the app
 
-    python server.py
+    python main.py
     
 # API Endpoints
 
@@ -16,7 +16,7 @@ myPlant Cloud Computing
 ### Request
 
 ```http
-GET http://127.0.0.1:8080/penyakit
+GET http://127.0.0.1:5000/penyakit
 ```
 
 ### Responses
@@ -34,7 +34,7 @@ GET http://127.0.0.1:8080/penyakit
 ### Request
 
 ```http
-GET http://127.0.0.1:8080/penyakit/2
+GET http://127.0.0.1:5000/penyakit/2
 ```
 
 ### Responses
