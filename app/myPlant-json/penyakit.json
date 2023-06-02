@@ -1,16 +1,318 @@
 [
-    {
-        "id": "1",
-        "nama": "Apel : Kudis",
-        "deskripsi": "Kudis apel adalah penyakit paling umum pada pohon apel dan crabapple di Minnesota dan tidak layak dimakan dengan daun yang terinfeksi memiliki bintik-bintik hijau hingga coklat.",
-        "faktor": "..",
-        "saran": "....."
-    },
-    {
-        "id": "2",
-        "nama": "Bintik",
-        "deskripsi": "Bintik adalah penyakit tanaman yang disebabkan oleh ulat dan dapat merusak daun",
-        "faktor": "....",
-        "saran": "....."
-    }
+  {
+    "id": 0,
+    "nama": "Apel Kudis",
+    "deskripsi": [
+      "Kudis apel adalah penyakit paling umum pada pohon apel dan crabapple di Minnesota.",
+      "Kudis disebabkan oleh jamur yang menginfeksi daun dan buah.",
+      "Buah kudis seringkali tidak layak untuk dimakan.",
+      "Daun yang terinfeksi memiliki bintik-bintik hijau hingga coklat.",
+      "Daun dengan banyak bercak daun menguning dan rontok lebih awal.",
+      "Kehilangan daun melemahkan pohon ketika terjadi bertahun-tahun berturut-turut.",
+      "Menanam varietas tahan penyakit adalah cara terbaik untuk mengelola kudis."
+    ],
+    "solusi": [
+      "Pilih varietas yang tahan jika memungkinkan.",
+      "Sapu daun di bawah pohon dan hancurkan daun yang terinfeksi untuk mengurangi jumlah spora jamur yang tersedia untuk memulai siklus penyakit lagi musim semi berikutnya.",
+      "Siram di malam hari atau dini hari (hindari sprinkler di atas kepala) untuk memberi waktu daun mengering sebelum infeksi dapat terjadi.",
+      "Sebarkan lapisan kompos berukuran 3 hingga 6 inci di bawah pohon, jauhkan dari batang, untuk menutupi tanah dan mencegah penyebaran percikan spora jamur.",
+      "Untuk kontrol terbaik, semprotkan sabun tembaga cair lebih awal, dua minggu sebelum gejala biasanya muncul. Alternatifnya, mulailah aplikasi saat penyakit pertama kali muncul, dan ulangi dengan interval 7 hingga 10 hari hingga bunganya rontok."
+    ]
+  },
+  {
+    "id": 1,
+    "nama": "Apel Busuk Hitam",
+    "deskripsi": [
+      "Gejala daun pertama kali muncul di awal musim semi saat daun sedang mekar.",
+      "Mereka muncul sebagai bintik ungu kecil di permukaan atas daun yang membesar menjadi lesi melingkar dengan diameter 1/8 hingga 1/4 inci (3-6 mm).",
+      "Tepi lesi tetap berwarna ungu, sedangkan bagian tengahnya berubah menjadi cokelat. Dalam beberapa minggu, terjadi pembesaran sekunder bercak daun ini.",
+      "Daun yang terinfeksi berat menjadi klorotik dan terjadi defoliasi.",
+      "Saat area yang membusuk membesar, serangkaian pita konsentris dengan bentuk lebar seragam yang berganti warna dari hitam menjadi coklat. Daging daerah yang membusuk tetap keras dan kasar. Piknidia hitam sering terlihat pada permukaan buah yang terinfeksi."
+    ],
+    "solusi": [
+      "Buang kanker dengan memangkas setidaknya 15 inci di bawah ujungnya dan bakar atau kubur. ",
+      "Juga lakukan perawatan pencegahan dengan pemangkasan musim baru dan bakar juga.",
+      "Anda lebih baik memangkas selama musim tidak aktif. Ini akan meminimalkan kemungkinan hawar api menginfeksi pohon Anda dan menghasilkan jaringan mati yang dapat dengan mudah terinfeksi oleh Botryosphaeria.",
+      "Anda juga harus berhati-hati jika kulit kayu rusak oleh hujan es, atau cabang patah saat badai angin. Menggunakan fungisida berbasis tembaga akan melindungi dari busuk hitam dan hawar api."
+    ]
+  },
+  {
+    "id": 2,
+    "nama": "Apel Karat Cedar",
+    "deskripsi": [
+      "Karat apel Cedar (Gymnosporangium juniperi-virginianae) adalah penyakit jamur yang membutuhkan tanaman juniper untuk menyelesaikan siklus hidupnya yang rumit selama dua tahun.",
+      "Spora menahan musim dingin sebagai empedu coklat kemerahan pada ranting muda dari berbagai spesies juniper.",
+      "Pada awal musim semi, selama cuaca basah, empedu ini membengkak dan massa spora oranye terang tertiup angin di mana mereka menginfeksi pohon apel dan apel kepiting yang rentan.",
+      "Spora yang berkembang di pohon ini hanya akan menginfeksi juniper pada tahun berikutnya.",
+      "Dari tahun ke tahun, penyakit ini harus berpindah dari juniper ke apel ke juniper lagi; itu tidak bisa menyebar di antara pohon apel."
+    ],
+    "solusi": [
+      "Pilih kultivar yang tahan bila tersedia.",
+      "Sapu dan buang daun-daun yang jatuh dan puing-puing lainnya dari bawah pohon.",
+      "Hapus galls dari juniper yang terinfeksi.",
+      "Dalam beberapa kasus, tanaman juniper harus dihilangkan seluruhnya.",
+      "Terapkan fungisida pencegah penyakit yang diberi label untuk digunakan pada apel setiap minggu, dimulai dengan kuncup pecah, untuk melindungi pohon dari spora yang dilepaskan oleh inang juniper. Ini hanya terjadi sekali dalam setahun, jadi aplikasi tambahan setelah penyebaran musim semi ini tidak diperlukan.",
+      "Pada juniper, karat dapat dikendalikan dengan menyemprot tanaman dengan larutan tembaga (0,5 hingga 2,0 ons/ galon air) setidaknya empat kali antara akhir Agustus dan akhir Oktober.",
+      "Obati sebagian besar penyakit jamur dan bakteri secara aman dengan SERENADE Garden.",
+      "Bio-fungisida spektrum luas ini menggunakan strain Bacillus subtilis yang telah dipatenkan dan terdaftar untuk penggunaan organik.",
+      "Yang terbaik dari semuanya, SERENADE sama sekali tidak beracun bagi lebah madu dan serangga yang bermanfaat."
+    ]
+  },
+  {
+    "id": 3,
+    "nama": "Apel Sehat",
+    "deskripsi": [
+      "Seperti kebanyakan buah, apel menghasilkan yang terbaik saat ditanam di bawah sinar matahari penuh, yang berarti enam jam atau lebih matahari musim panas langsung setiap hari.",
+      "Paparan terbaik untuk apel adalah sisi utara rumah, garis pohon, atau tanjakan daripada selatan.",
+      "Apel pohon membutuhkan tanah yang dikeringkan dengan baik, tetapi harus dapat mempertahankan kelembapan."
+    ],
+    "solusi": [
+      "Apel Bergizi.",
+      "Apel Mungkin Baik untuk Menurunkan Berat Badan.",
+      "Apel Mungkin Baik untuk Jantung Anda.",
+      "Mereka Terkait dengan Risiko Diabetes yang Lebih Rendah.",
+      "Mereka Mungkin Memiliki Efek Prebiotik dan Mempromosikan Bakteri Usus Baik.",
+      "Zat dalam Apel Dapat Membantu Mencegah Kanker."
+    ]
+  },
+  {
+    "id": 4,
+    "nama": "Jagung Bercak Abu2",
+    "deskripsi": [
+      "Bercak daun abu-abu pada jagung, yang disebabkan oleh jamur Cercospora zeae-maydis, merupakan penyakit tahunan dan merusak secara ekonomi di Amerika Serikat.",
+      "Sejak pertengahan 1990-an, penyakit ini semakin penting di Indiana, dan sekarang menjadi salah satu penyakit daun jagung terpenting di negara bagian.",
+      "Penyakit bercak daun abu-abu disebabkan oleh jamur Pyricularia grisea, juga disebut sebagai Magnaporthe grisea .",
+      "Periode hujan hangat yang sering terjadi di Florida menciptakan kondisi yang menguntungkan untuk penyakit jamur ini.",
+      "Jamur ini memperlambat pertumbuhan, menipiskan tegakan yang sudah mapan dan dapat membunuh area yang luas dari St."
+    ],
+    "solusi": [
+      "Irigasi dalam-dalam, tetapi jarang.",
+      "Hindari menggunakan pembunuh gulma pasca-muncul di halaman saat penyakitnya aktif.",
+      "Hindari tingkat pupuk nitrogen sedang hingga tinggi.",
+      "Tingkatkan sirkulasi udara dan tingkat cahaya di halaman.",
+      "Memotong pada ketinggian yang sesuai dan hanya memotong ketika rumput kering."
+    ]
+  },
+  {
+    "id": 5,
+    "nama": "Jagung Penyakit Karat",
+    "deskripsi": [
+      "Meski beberapa pustula karat selalu bisa ditemukan di ladang jagung sepanjang musim tanam, gejala umumnya baru muncul setelah rumbai.",
+      "Ini dapat dengan mudah dikenali dan dibedakan dari penyakit lain dengan munculnya pustula berwarna coklat kemerahan (uredinia) yang tersebar di permukaan atas dan bawah daun jagung.",
+      "Pustula ini dapat muncul pada bagian tanaman di atas tanah, tetapi paling banyak terdapat pada daun.",
+      "Pustula tampak berbentuk lonjong hingga memanjang, umumnya berukuran kecil, panjangnya kurang dari 1/4 inci, dan dikelilingi oleh lapisan epidermis daun, tempat pustula tersebut pecah."
+    ],
+    "solusi": [
+      "Untuk mengurangi timbulnya karat jagung, tanamlah hanya jagung yang tahan terhadap jamur.",
+      "Ketahanan dapat berupa ketahanan khusus ras atau ketahanan karat parsial.",
+      "Bagaimanapun, tidak ada jagung manis yang benar-benar tahan.",
+      "Jika jagung mulai menunjukkan gejala infeksi, segera semprot dengan fungisida."
+    ]
+  },
+  {
+    "id": 6,
+    "nama": "Jagung Hawar Daun Utara",
+    "deskripsi": [
+      "Penyakit hawar daun jagung utara (NCLB) disebabkan oleh jamur Setosphaeria turcica.",
+      "Gejala biasanya muncul pertama kali pada daun bagian bawah.",
+      "Lesi daun panjang (1 hingga 6 inci) dan elips, awalnya berwarna abu-abu kehijauan, tetapi kemudian berubah menjadi abu-abu pucat atau cokelat.",
+      "Dalam kondisi lembab, spora berwarna abu-abu tua dihasilkan, biasanya pada permukaan daun bagian bawah, yang membuat lesi tampak berwarna abu-abu 'kotor'.",
+      "Seluruh daun pada tanaman yang sangat busuk bisa mati, sehingga luka individu tidak terlihat.",
+      "Lesi dapat terjadi pada kulit luar telinga, tetapi bijinya tidak terinfeksi.",
+      "Pada hibrida yang mengandung gen Ht untuk ketahanan terhadap jamur, lesi lebih kecil, klorotik, dan dapat berkembang menjadi coretan linier.",
+      "Lesi ini jarang menghasilkan spora."
+    ],
+    "solusi": [
+      "Aplikasi fungisida mengurangi kerusakan Hawar Daun Jagung Utara dan melindungi hasil panen.",
+      "Nilai fungisida lebih tinggi dalam menurunkan hasil pada jagung hibrida yang rentan.",
+      "Fungisida paling efektif jika diterapkan pada awal penyakit.",
+      "Onset penyakit bervariasi dalam tahap pertumbuhan, sehingga tahap terbaik untuk menerapkan fungisida."
+    ]
+  },
+  {
+    "id": 7,
+    "nama": "Jagung Sehat",
+    "deskripsi": [
+      "Tanaman jagung lebih menyukai suhu siang hari 75 sampai 80 derajat F dan 65 sampai 70 derajat F pada malam hari.",
+      "Tanah harus dijaga tetap lembab, tetapi tidak lembek dan hanya membutuhkan pupuk setiap 6 bulan sekali.",
+      "Meskipun dracaena dapat mengambil kondisi cahaya redup, mereka melakukan yang terbaik ketika ditempatkan di cahaya terang tetapi tidak langsung.",
+      "Wajar jika tanaman menghasilkan beberapa daun kuning, tidak ada yang perlu dikhawatirkan.",
+      "Namun jika menghasilkan banyak daun kuning sekaligus, katakanlah lima atau enam, Anda mungkin terlalu banyak menyiram atau tanaman mungkin kekurangan cahaya."
+    ],
+    "solusi": [
+      "Jagung memiliki beberapa manfaat kesehatan.",
+      "Karena kandungan seratnya yang tinggi, dapat membantu melancarkan pencernaan.",
+      "Ini juga mengandung vitamin B yang berharga, yang penting untuk kesehatan Anda secara keseluruhan.",
+      "Jagung juga menyediakan mineral penting bagi tubuh kita seperti seng, magnesium, tembaga, besi, dan mangan."
+    ]
+  },
+  {
+    "id": 8,
+    "nama": "Anggur Busuk Hitam",
+    "deskripsi": [
+      "Busuk hitam anggur adalah penyakit jamur yang disebabkan oleh jamur ascomycetous, Guignardia bidwellii, yang menyerang tanaman anggur saat cuaca panas dan lembab. ",
+      "Busuk hitam anggur berasal dari Amerika Utara bagian timur, tetapi sekarang terjadi di sebagian Eropa, Amerika Selatan, dan Asia.",
+      "Ini dapat menyebabkan kehilangan panen total di iklim yang hangat dan lembab, tetapi hampir tidak dikenal di daerah dengan musim panas yang gersang.",
+      "Nama tersebut berasal dari pinggiran hitam yang berbatasan dengan bercak coklat yang tumbuh di daun.",
+      "Penyakit ini juga menyerang bagian tanaman yang lain,  seluruh bagian tumbuhan merambat yang berwarna hijau: pucuk, daun dan batang buah, sulur, dan buah.",
+      "Efek yang paling merusak adalah pada buah"
+    ],
+    "solusi": [
+      "Mancozeb tersedia sebagai fungisida BONIDE MANCOZEB FLOWABLE.",
+      "Mengandung 37% Mancozeb dan seharusnya sangat efektif untuk mengendalikan busuk hitam.",
+      "Nova (myclobutanil) tersedia dalam IMMUNOX FUNGICIDE.",
+      "Ini adalah 1,55% myclobutanil dan harus efektif untuk mengendalikan busuk hitam."
+    ]
+  },
+  {
+    "id": 9,
+    "nama": "Anggur Campak Hitam",
+    "deskripsi": [
+      "Campak selentingan, juga disebut esca, campak hitam atau campak Spanyol, telah lama menjangkiti petani anggur dengan ekspresi gejala yang samar dan, untuk waktu yang lama, kurangnya organisme penyebab yang dapat diidentifikasi.",
+      "Nama “campak” mengacu pada bintik-bintik superfisial yang ditemukan pada buah (Gbr. 1).",
+      "Selama musim, bintik-bintik itu bisa menyatu di permukaan kulit, membuat buah beri tampak hitam.",
+      "Bercak dapat berkembang kapan saja antara set buah dan beberapa hari sebelum panen.",
+      "Buah beri yang terpengaruh saat berbuah cenderung tidak matang dan akan layu dan mengering.",
+      "Selain bercak, buah yang terkena pada akhir musim juga akan memiliki rasa yang tajam.",
+      "Gejala daun ditandai dengan pola “garis harimau” (Gambar 2-bawah daun) saat infeksi parah dari tahun ke tahun.",
+      "Infeksi ringan dapat menimbulkan gejala pada daun (Gbr. 2-daun bagian atas) yang dapat dikacaukan dengan penyakit lain atau defisiensi nutrisi.",
+      "Kultivar putih akan menunjukkan area klorosis diikuti dengan nekrosis, sedangkan kultivar merah ditandai dengan area merah diikuti dengan nekrosis.",
+      "Gejala awal musim semi termasuk ujung pucuk mati, perubahan warna daun dan defoliasi total pada kasus yang parah."
+    ],
+    "solusi": [
+      "Sampai saat ini belum ada cara yang efektif untuk mengendalikan penyakit ini.",
+      "Buang buah beri, daun, dan batang yang terinfeksi dan hancurkan.",
+      "Lindungi luka pangkas untuk meminimalkan infeksi jamur dengan menggunakan penutup luka (asam borat 5% dalam cat akrilik) atau minyak esensial atau fungisida yang sesuai."
+    ]
+  },
+  {
+    "id": 10,
+    "nama": "Anggur  Hawar Daun / Bercak Daun Isariopsis",
+    "deskripsi": [
+      "Jamur merupakan patogen obligat yang dapat menyerang semua bagian tanaman yang berwarna hijau.",
+      "Gejala penyakit ini sering dikacaukan dengan penyakit embun tepung. ",
+      "Daun yang terinfeksi mengembangkan lesi kuning-hijau pucat yang berangsur-angsur berubah menjadi coklat.",
+      "Daun yang terinfeksi parah sering rontok sebelum waktunya.",
+      "Tangkai daun, sulur, dan pucuk yang terinfeksi sering mengeriting, mengembangkan lekukan gembala, dan akhirnya berubah menjadi coklat dan mati.",
+      "Berry muda sangat rentan terhadap infeksi dan sering ditutupi dengan struktur buah putih dari jamur.",
+      "Berry tua yang terinfeksi dari kultivar putih dapat berubah menjadi hijau keabu-abuan kusam, sedangkan kultivar hitam berubah menjadi merah muda."
+    ],
+    "solusi": [
+      "Terapkan semprotan yang tidak aktif untuk mengurangi tingkat inokulum.",
+      "Hentikan itu.",
+      "Buka kanopi itu.",
+      "Jangan biarkan pertahananmu runtuh.",
+      "Pramuka lebih awal, sering pramuka.",
+      "Gunakan fungisida pelindung dan sistemik.",
+      "Pertimbangkan resistensi fungisida.",
+      "Perhatikan cuaca."
+    ]
+  },
+  {
+    "id": 11,
+    "nama": "Anggur Sehat",
+    "deskripsi": [
+      "Oleskan air hanya ke zona akar. Hindari membasahi dedaunan anggur karena ini dapat mendorong banyak penyakit anggur.",
+      "Kurangi penyiraman tanaman merambat muda di musim gugur untuk mendorong tanaman mengeraskan batangnya untuk mempersiapkan musim dingin.",
+      "Tanaman merambat yang lebih tua jarang membutuhkan penyiraman kecuali pada tanah berpasir atau tanah lain yang dikeringkan dengan sangat baik."
+    ],
+    "solusi": [
+      "Dikemas Dengan Nutrisi, Terutama Vitamin C dan K.",
+      "Kandungan Antioksidan Tinggi Dapat Mencegah Penyakit Kronis.",
+      "Senyawa Tumbuhan Dapat Melindungi Terhadap Jenis Kanker Tertentu.",
+      "Bermanfaat untuk Kesehatan Jantung dengan Berbagai Cara Mengesankan.",
+      "Dapat Menurunkan Kadar Gula Darah dan Melindungi Terhadap Diabetes."
+    ]
+  },
+  {
+    "id": 12,
+    "nama": "Kentang Bercak Kering",
+    "deskripsi": [
+      "Di sebagian besar area produksi, penyakit busuk daun awal terjadi setiap tahun sampai tingkat tertentu.",
+      "Tingkat keparahan hawar awal tergantung pada frekuensi kebasahan daun dari hujan, embun, atau irigasi; status gizi dedaunan; dan kerentanan kultivar.",
+      "Gejala awal hawar daun muncul sebagai bercak kecil, melingkar atau tidak beraturan, berwarna cokelat tua hingga hitam pada daun yang lebih tua (bawah).",
+      "Bintik-bintik ini membesar dengan diameter hingga 3/8 inci dan secara bertahap dapat menjadi berbentuk sudut.",
+      "Lesi awal pada daun muda yang tumbuh penuh mungkin dikacaukan dengan lesi bercak coklat.",
+      "Lesi pertama ini muncul sekitar dua sampai tiga hari setelah infeksi, dengan sporulasi lebih lanjut pada permukaan lesi ini terjadi tiga sampai lima hari kemudian."
+    ],
+    "solusi": [
+      "Pengobatan hawar daun dini meliputi pencegahan dengan menanam varietas kentang yang tahan penyakit; umur genjah lebih tahan daripada varietas genjah.",
+      "Hindari irigasi di atas kepala dan biarkan aerasi yang cukup di antara tanaman agar dedaunan mengering secepat mungkin."
+    ]
+  },
+  {
+    "id": 13,
+    "nama": "Kentang Busuk Daun",
+    "deskripsi": [
+      "Inang utamanya adalah kentang, tetapi P. infestans juga dapat menginfeksi tanaman solanaceous lainnya, termasuk tomat, petunia, dan hairy nightshade, yang dapat menjadi sumber inokulum bagi kentang.",
+      "Gejala pertama penyakit busuk daun di lapangan adalah kecil, terang hingga gelap. bintik-bintik berair berwarna hijau, melingkar hingga tidak beraturan.",
+      "Lesi ini biasanya muncul pertama kali pada daun bagian bawah.",
+      "Lesi sering mulai berkembang di dekat ujung atau tepi daun, di mana embun tertahan paling lama.",
+      "Selama cuaca dingin dan lembab, luka ini berkembang dengan cepat menjadi luka besar berwarna coklat tua atau hitam, seringkali tampak berminyak. Lesi daun juga sering dikelilingi oleh halo klorotik kuning"
+    ],
+    "solusi": [
+      "Penyakit busuk daun yang parah dapat dikelola secara efektif dengan penyemprotan profilaksis mancozeb pada 0,25% diikuti dengan cymoxanil+mancozeb atau dimethomorph+mancozeb pada 0,3% pada awal penyakit dan satu lagi semprotan mancozeb pada 0,25% tujuh hari setelah aplikasi fungisida sistemik di Benggala Barat"
+    ]
+  },
+  {
+    "id": 14,
+    "nama": "Kentang Sehat",
+    "deskripsi": [
+      "Banyak kentang membutuhkan tingkat kelembapan yang konsisten untuk berkembang, jadi sirami secara teratur setiap hari saat umbi terbentuk.",
+      "Saat Anda menyirami tanaman kentang, ia harus mencapai permukaan tanah sekitar 8-10 inci.",
+      "Selama musim panas atau hangat, sirami tanaman kentang dalam jumlah besar dua kali sehari karena tanah cepat kering."
+    ],
+    "solusi": [
+      "Dikemas Dengan Nutrisi. Bagikan di Pinterest.",
+      "Mengandung Antioksidan. Kentang kaya akan senyawa seperti flavonoid, karotenoid, dan asam fenolik (4).",
+      "Dapat Meningkatkan Kontrol Gula Darah.",
+      "Dapat Meningkatkan Kesehatan Pencernaan.",
+      "Bebas Gluten Secara Alami.",
+      "Sangat Mengisi.",
+      "Sangat Serbaguna."
+    ]
+  },
+  {
+    "id": 15,
+    "nama": "Strawberry Daun Hangus",
+    "deskripsi": [
+      "Gejala hangus daun sangat mirip dengan tahap awal bercak daun umum (Mycosphaerella), dengan bercak ungu tua yang tidak beraturan tersebar di permukaan daun bagian atas.",
+      "Saat bercak membesar, mulai terlihat seperti tetesan tar, dan sebenarnya merupakan kumpulan tubuh buah hitam (acervuli) jamur.",
+      "Bagian tengah bercak tetap ungu (pada bercak daun Mycosphaerella berwarna putih) dan tidak ada batas lesi yang jelas.",
+      "Pada infeksi berat, daerah ini menyatu dan jaringan di antara lesi sering berwarna keunguan hingga merah cerah yang bergantung pada kultivar, suhu, atau faktor lainnya.",
+      "Daun akhirnya berubah menjadi coklat, mengering, dan menggulung di tepinya sehingga daun tampak hangus.",
+      "Pemeriksaan morfologi acervuli dan konidial dapat membantu membedakan antara bercak daun dan hangus daun pada stadium lanjut penyakit ini.",
+      "Pada permukaan daun bagian atas lesi hangus daun, acervuli berwarna gelap dengan massa spora berkilau dan apothecia gelap.",
+      "Lesi tangkai daun memanjang, cekung, dengan warna keunguan hingga coklat dan dapat membunuh daun dengan mengikat tangkai daun.",
+      "Pelari, batang buah, buah dan topi juga bisa terinfeksi. Tanaman dapat menjadi lemah dan jumlah serta kekuatan tajuk berkurang.",
+      "Infeksi mempengaruhi tanaman untuk musim dingin dan stres kekeringan. Pada serangan yang parah, bunga dan buah dapat mati."
+    ],
+    "solusi": [
+      "Meskipun daun hangus pada tanaman stroberi bisa membuat frustasi, ada beberapa strategi yang dapat diterapkan oleh tukang kebun rumahan untuk membantu mencegah penyebarannya di kebun.",
+      "Cara utama pengendalian hangus daun stroberi harus selalu berupa pencegahan. ",
+      "Karena patogen jamur ini melewati musim dingin pada daun yang jatuh dari tanaman yang terinfeksi, sanitasi taman yang tepat adalah kuncinya.",
+      "Ini termasuk pemindahan puing-puing kebun yang terinfeksi dari petak stroberi, serta penanaman stroberi baru yang sering dilakukan.",
+      "Pembuatan penanaman baru dan tambalan stroberi adalah kunci untuk mempertahankan panen stroberi yang konsisten, karena tanaman yang lebih tua cenderung menunjukkan tanda-tanda infeksi yang parah."
+    ]
+  },
+  {
+    "id": 16,
+    "nama": "Strawberry Sehat",
+    "deskripsi": [
+      "Temukan mereka tempat yang cerah karena mereka suka dan butuh banyak cahaya. Saya lebih suka tempat di mana mereka menerima sinar matahari pagi.",
+      "Jika Anda memilikinya di dalam pot dan/atau wadah lain, sebaiknya pindahkan di siang hari untuk memanfaatkan perubahan sinar matahari.",
+      "Mereka adalah tanaman yang haus. Sirami mereka setiap hari, terutama jika mereka menghasilkan buah. Sebaiknya dilakukan pada pagi hari dan hindari membasahi daun untuk pencegahan penyakit.",
+      "Jauhkan mereka dari kondisi cuaca ekstrim dan angin. Harap dicatat bahwa meskipun mereka menyukai sinar matahari, terkena sinar matahari langsung di siang hari juga dapat merusak.",
+      "Periksa pot untuk drainase yang baik.",
+      "Jauhkan gulma dan tanaman yang tidak diinginkan.",
+      "Anda perlu memupuknya karena membutuhkan banyak energi untuk menghasilkan stroberi. Belilah pupuk berimbang (10-10-10, 12-12-12, dst). Ikuti petunjuknya karena terlalu banyak pupuk dapat mengurangi hasil buah dan juga dapat merangsang produksi tunas."
+    ],
+    "solusi": [
+      "Siluet stroberi berbentuk hati adalah petunjuk pertama bahwa buah ini baik untuk Anda.",
+      "Kemasan kecil yang ampuh ini melindungi jantung Anda, meningkatkan kolesterol HDL (baik), menurunkan tekanan darah, dan mencegah kanker.",
+      "Dikemas dengan vitamin, serat, dan antioksidan tingkat tinggi yang dikenal sebagai polifenol, stroberi adalah makanan bebas sodium, bebas lemak, bebas kolesterol, dan rendah kalori.",
+      "Mereka termasuk di antara 20 buah teratas dalam kapasitas antioksidan dan merupakan sumber mangan dan potasium yang baik.",
+      "Hanya satu porsi, sekitar delapan stroberi, menyediakan lebih banyak vitamin C daripada jeruk."
+    ]
+  }
 ]

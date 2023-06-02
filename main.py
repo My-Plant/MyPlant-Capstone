@@ -48,7 +48,7 @@ def pagePenyakit():
 
 
 # Endpoint menampilkan penyakit berdasarkan id
-@app.route('/penyakit/<string:penyakit>', methods=['GET'])
+@app.route('/penyakit/<int:penyakit>', methods=['GET'])
 def namaPenyakit(penyakit):
     penyakit_id = penyakit
     for penyakit_data in contoh:
