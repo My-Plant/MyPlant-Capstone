@@ -10,12 +10,64 @@ import tensorflow as tf
 from google.cloud import storage
 from PIL import Image
 from flask import Flask, request, jsonify, json
-# from firebase_admin import credentials, firestore
 from keras.models import load_model
 from werkzeug.utils import secure_filename
+from firebase_admin import credentials, initialize_app, auth
+import dotenv
 
 # Load Firebase service account credentials
+
+#Login User
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'akusayangkamu'
+dotenv.load_dotenv()
+cred = credentials.Certificate("firebase-admin.json")
+default_app = initialize_app(cred)
+
+@app.route('/login', methods=['POST'])
+def login():
+    email = request.json['email']
+    password = request.json['password']
+
+    try:
+        user = auth.get_user_by_email(email)
+        if user:
+            web_api_key_token = os.getenv("WEB_API_KEY_TOKEN")
+            firebase_url = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key={}".format(web_api_key_token)
+
+            req = requests.post(firebase_url, json={"email": email, "password": password})
+            response_data = req.json()
+
+            if 'idToken' in response_data:
+                # Berhasil masuk
+                return jsonify({'message': 'Login berhasil'})
+            else:
+                # Gagal masuk
+                return jsonify({'message': 'Password salah'}), 401
+         
+    except Exception as e:
+        return jsonify({'message': 'Email salah '}), 401
+
+
+
+#register
+@app.route('/register', methods=['POST'])
+def register():
+    # data = request.get_json()
+    email = request.json['email']
+    password = request.json['password']
+
+    try:
+        user = auth.create_user(
+            email=email,
+            password=password
+        )
+
+        # User berhasil terdaftar
+        return {'message': 'Akun berhasil dibuat'},200
+
+    except Exception as e:
+        return {'message': 'Email sudah tersedia'}, 400
 
 # Load model
 model = tf.keras.models.load_model('app/models/Model_1.h5')
@@ -40,7 +92,7 @@ def welcome():
 @app.route('/penyakit', methods=['GET'])
 def pagePenyakit():
     try:
-        filtered_data = [{"nama": penyakit['nama'], "deskripsi": penyakit['deskripsi'],"id": penyakit['id']} for penyakit in contoh]
+        filtered_data = [{"nama": penyakit['nama'], "deskripsi": penyakit['deskripsi'],"id": penyakit['id'], "solusi": penyakit['solusi']} for penyakit in contoh]
     except:
         return jsonify({'Nama penyakit tidak ditemukan'})
     return jsonify(filtered_data), 200
@@ -132,7 +184,8 @@ def predict():
             'prediction': result,
             'image_url': image_url,
             'id': penyakit_id,
-            'deskripsi': deskripsi
+            'deskripsi': deskripsi,
+            'solusi' : solusi
         }
     except Exception as e:
         return jsonify({"error": str(e)})
