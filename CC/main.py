@@ -21,9 +21,8 @@ app = Flask(__name__)
 model = tf.keras.models.load_model('app/models/Model_1.h5')
 
 # Load penyakit data
-with open('app/myPlant-json/penyakit.json') as json_file:
+with open('app/myPlant-json/penyakit.json', encoding='utf-8') as json_file:
     contoh = json.load(json_file)
-
 
 # Initialize Google Cloud Storage client
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'credentials.json'
@@ -41,18 +40,18 @@ def welcome():
 @app.route('/penyakit', methods=['GET'])
 def pagePenyakit():
     try:
-        filtered_data = [{"nama": penyakit['nama'], "deskripsi": penyakit['deskripsi']} for penyakit in contoh]
+        filtered_data = [{"nama": penyakit['nama'], "deskripsi": penyakit['deskripsi'],"id": penyakit['id']} for penyakit in contoh]
     except:
         return jsonify({'Nama penyakit tidak ditemukan'})
     return jsonify(filtered_data), 200
 
 
 # Endpoint menampilkan penyakit berdasarkan id
-@app.route('/penyakit/<int:penyakit>', methods=['GET'])
-def namaPenyakit(penyakit):
-    penyakit_id = penyakit
+@app.route('/penyakit/<string:penyakit_id>', methods=['GET'])
+def namaPenyakit(penyakit_id):
+    penyakit_nama = penyakit_id
     for penyakit_data in contoh:
-        if penyakit_data['id'] == penyakit_id:
+        if penyakit_data['id'] == penyakit_nama:
             return jsonify(penyakit_data), 200
     return jsonify({'message': 'Penyakit tidak ditemukan!'}), 400
 
@@ -81,14 +80,14 @@ def predict():
     # Membaca input file
     img_bytes = file.read()
 
-    # Generate a unique filename for the uploaded image
+    # Membuat filename unik untuk file yang di upload
     filename = secure_filename(file.filename)
     blob = bucket.blob(filename)
 
-    # Upload the image to Google Cloud Storage
+    # Upload gambar ke cloud storage
     blob.upload_from_string(img_bytes, content_type='image/jpeg')
 
-    # Get the public URL of the uploaded image
+    # Mendapatkan public url
     image_url = blob.public_url
 
     # File image untuk prediksi
@@ -118,9 +117,22 @@ def predict():
         prediction = np.argmax(model.predict(images)[0])
         result = prediction_labels[prediction]
 
+        for penyakit_data in contoh:
+            if penyakit_data['nama'] == result:
+                penyakit_id = penyakit_data['id']
+                deskripsi = penyakit_data['deskripsi']
+                solusi = penyakit_data['solusi']
+                
+                break
+        else:
+            # Penyakit tidak ditemukan penyakit.json
+            return jsonify({'message': 'Penyakit tidak ditemukan!'}), 400
+
         return {
             'prediction': result,
-            'image_url': image_url
+            'image_url': image_url,
+            'id': penyakit_id,
+            'deskripsi': deskripsi
         }
     except Exception as e:
         return jsonify({"error": str(e)})
