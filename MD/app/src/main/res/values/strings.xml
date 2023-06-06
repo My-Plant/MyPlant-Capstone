@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Kepston</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="loginatregister">Already Have an Account</string>
+    <string name="myplant">MyPlant</string>
+    <string name="galeri">Galeri</string>
+    <string name="camera">Kamera</string>
+    <string name="deteksi">Deteksi</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
