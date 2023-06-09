@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "916841138367",
+    "project_id": "myplant-fae46",
+    "storage_bucket": "myplant-fae46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916841138367:android:37e4088c0eaf1d8eb95e0a",
+        "android_client_info": {
+          "package_name": "com.example.kepston"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916841138367-vm0a9jubq1ijguhr1ur39hjc1rpi437o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv0Lz6DHAHUfVkzWLEEi60eb0pG11xe_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916841138367-vm0a9jubq1ijguhr1ur39hjc1rpi437o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,3 +2,4 @@ __pycache__
 README.md
 credentials.json
 .env
+firebase-admin.json
