@@ -1,7 +1,7 @@
 [
   {
     "id": "0",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/apple_scab.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/apple_scab.jpg",
     "nama": "Apple Scab",
     "deskripsi": [
       "Kudis apel adalah penyakit paling umum pada pohon apel dan crabapple di Minnesota.",
@@ -22,7 +22,7 @@
   },
   {
     "id": "1",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/apple_black_rot.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/apple_black_rot.jpg",
     "nama": "Apple Black Rot",
     "deskripsi": [
       "Gejala daun pertama kali muncul di awal musim semi saat daun sedang mekar.",
@@ -40,7 +40,7 @@
   },
   {
     "id": "2",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Apple%20Cedar%20rust.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Apple%20Cedar%20rust.jpg",
     "nama": "Apple Cedar rust",
     "deskripsi": [
       "Karat apel Cedar (Gymnosporangium juniperi-virginianae) adalah penyakit jamur yang membutuhkan tanaman juniper untuk menyelesaikan siklus hidupnya yang rumit selama dua tahun.",
@@ -63,7 +63,7 @@
   },
   {
     "id": "3",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Apple%20Healthy.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Apple%20Healthy.jpg",
     "nama": "Apple Healthy",
     "deskripsi": [
       "Seperti kebanyakan buah, apel menghasilkan yang terbaik saat ditanam di bawah sinar matahari penuh, yang berarti enam jam atau lebih matahari musim panas langsung setiap hari.",
@@ -81,7 +81,7 @@
   },
   {
     "id": "4",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Corn%20Cercospora%20Leaf%20Spot.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Corn%20Cercospora%20Leaf%20Spot.jpg",
     "nama": "Corn Cercospora Leaf Spot | Gray Leaf Spot",
     "deskripsi": [
       "Bercak daun abu-abu pada jagung, yang disebabkan oleh jamur Cercospora zeae-maydis, merupakan penyakit tahunan dan merusak secara ekonomi di Amerika Serikat.",
@@ -100,7 +100,7 @@
   },
   {
     "id": "5",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Corn%20Common%20Rust.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Corn%20Common%20Rust.jpg",
     "nama": "Corn Common Rust",
     "deskripsi": [
       "Meski beberapa pustula karat selalu bisa ditemukan di ladang jagung sepanjang musim tanam, gejala umumnya baru muncul setelah rumbai.",
@@ -117,7 +117,7 @@
   },
   {
     "id": "6",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Corn%20Northern%20Leaf%20Blight.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Corn%20Northern%20Leaf%20Blight.jpg",
     "nama": "Corn Northern Leaf Blight",
     "deskripsi": [
       "Penyakit hawar daun jagung utara (NCLB) disebabkan oleh jamur Setosphaeria turcica.",
@@ -138,7 +138,7 @@
   },
   {
     "id": "7",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Corn%20Healthy.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Corn%20Healthy.jpg",
     "nama": "Corn Healthy",
     "deskripsi": [
       "Tanaman jagung lebih menyukai suhu siang hari 75 sampai 80 derajat F dan 65 sampai 70 derajat F pada malam hari.",
@@ -156,7 +156,7 @@
   },
   {
     "id": "8",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Grape%20Black%20Rot.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Grape%20Black%20Rot.jpg",
     "nama": "Grape Black Rot",
     "deskripsi": [
       "Busuk hitam anggur adalah penyakit jamur yang disebabkan oleh jamur ascomycetous, Guignardia bidwellii, yang menyerang tanaman anggur saat cuaca panas dan lembab. ",
@@ -175,7 +175,7 @@
   },
   {
     "id": "9",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Grape%20Esca%20%20Black%20Measles.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Grape%20Esca%20%20Black%20Measles.jpg",
     "nama": "Grape Esca | Black Measles",
     "deskripsi": [
       "Campak selentingan, juga disebut esca, campak hitam atau campak Spanyol, telah lama menjangkiti petani anggur dengan ekspresi gejala yang samar dan, untuk waktu yang lama, kurangnya organisme penyebab yang dapat diidentifikasi.",
@@ -197,7 +197,7 @@
   },
   {
     "id": "10",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Grape%20Leaf%20Blight%20%20Isariopsis%20Leaf%20Spot.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Grape%20Leaf%20Blight%20%20Isariopsis%20Leaf%20Spot.jpg",
     "nama": "Grape Leaf Blight | Isariopsis Leaf Spot",
     "deskripsi": [
       "Jamur merupakan patogen obligat yang dapat menyerang semua bagian tanaman yang berwarna hijau.",
@@ -221,7 +221,7 @@
   },
   {
     "id": "11",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Grape%20Healthy.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Grape%20Healthy.jpg",
     "nama": "Grape Healthy",
     "deskripsi": [
       "Oleskan air hanya ke zona akar. Hindari membasahi dedaunan anggur karena ini dapat mendorong banyak penyakit anggur.",
@@ -238,7 +238,7 @@
   },
   {
     "id": "12",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Potato%20Early%20Blight.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Potato%20Early%20Blight.jpg",
     "nama": "Potato Early Blight",
     "deskripsi": [
       "Di sebagian besar area produksi, penyakit busuk daun awal terjadi setiap tahun sampai tingkat tertentu.",
@@ -255,7 +255,7 @@
   },
   {
     "id": "13",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Potato%20Late%20Blight.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Potato%20Late%20Blight.jpg",
     "nama": "Potato Late Blight",
     "deskripsi": [
       "Inang utamanya adalah kentang, tetapi P. infestans juga dapat menginfeksi tanaman solanaceous lainnya, termasuk tomat, petunia, dan hairy nightshade, yang dapat menjadi sumber inokulum bagi kentang.",
@@ -270,7 +270,7 @@
   },
   {
     "id": "14",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Potato%20Healthy.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Potato%20Healthy.jpg",
     "nama": "Potato Healthy",
     "deskripsi": [
       "Banyak kentang membutuhkan tingkat kelembapan yang konsisten untuk berkembang, jadi sirami secara teratur setiap hari saat umbi terbentuk.",
@@ -289,7 +289,7 @@
   },
   {
     "id": "15",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Strawberry%20Leaf%20Scorch.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Strawberry%20Leaf%20Scorch.jpg",
     "nama": "Strawberry Leaf Scorch",
     "deskripsi": [
       "Gejala hangus daun sangat mirip dengan tahap awal bercak daun umum (Mycosphaerella), dengan bercak ungu tua yang tidak beraturan tersebar di permukaan daun bagian atas.",
@@ -313,7 +313,7 @@
   },
   {
     "id": "16",
-    "foto": "https://storage.googleapis.com/asia.artifacts.project-firebase-387302.appspot.com/Strawberry%20Healthy.jpg",
+    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/Strawberry%20Healthy.jpg",
     "nama": "Strawberry Healthy",
     "deskripsi": [
       "Temukan mereka tempat yang cerah karena mereka suka dan butuh banyak cahaya. Saya lebih suka tempat di mana mereka menerima sinar matahari pagi.",
