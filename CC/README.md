@@ -28,6 +28,46 @@ Private endpoint designed using Flask framework and firebase as authentication f
     
 # API Endpoints
 
+## Register
+
+### Request
+
+```http
+POST /register
+```
+
+### Responses
+
+```javascript
+{
+    "message": "Akun berhasil dibuat"
+}
+```
+
+`email` = email user
+
+`password` = password user
+
+## Login
+
+### Request
+
+```http
+POST /login
+```
+
+### Responses
+
+```javascript
+{
+    "message": "Login Berhasil"
+}
+```
+
+`email` = email user
+
+`password` = password user
+
 ## Penyakit
 
 ### Request
