@@ -120,28 +120,27 @@ POST /predict
 ### Responses
 
 ```javascript
-[
-  {
-    "id": "0",
-    "foto": "https://storage.googleapis.com/asia.artifacts.myplant-389306.appspot.com/foto_penyakit/apple_scab.jpg",
-    "nama": "Apple Scab",
+{
     "deskripsi": [
-      "Kudis apel adalah penyakit paling umum pada pohon apel dan crabapple di Minnesota.",
-      "Kudis disebabkan oleh jamur yang menginfeksi daun dan buah.",
-      "Buah kudis seringkali tidak layak untuk dimakan.",
-      "Daun yang terinfeksi memiliki bintik-bintik hijau hingga coklat.",
-      "Daun dengan banyak bercak daun menguning dan rontok lebih awal.",
-      "Kehilangan daun melemahkan pohon ketika terjadi bertahun-tahun berturut-turut.",
-      "Menanam varietas tahan penyakit adalah cara terbaik untuk mengelola kudis."
+        "Kudis apel adalah penyakit paling umum pada pohon apel dan crabapple di Minnesota.",
+        "Kudis disebabkan oleh jamur yang menginfeksi daun dan buah.",
+        "Buah kudis seringkali tidak layak untuk dimakan.",
+        "Daun yang terinfeksi memiliki bintik-bintik hijau hingga coklat.",
+        "Daun dengan banyak bercak daun menguning dan rontok lebih awal.",
+        "Kehilangan daun melemahkan pohon ketika terjadi bertahun-tahun berturut-turut.",
+        "Menanam varietas tahan penyakit adalah cara terbaik untuk mengelola kudis."
     ],
+    "id": "0",
+    "image_url": "https://storage.googleapis.com/myplant123/scab-on-foliage.jpg",
+    "prediction": "Apple Scab",
     "solusi": [
-      "Pilih varietas yang tahan jika memungkinkan.",
-      "Sapu daun di bawah pohon dan hancurkan daun yang terinfeksi untuk mengurangi jumlah spora jamur yang tersedia untuk memulai siklus penyakit lagi musim semi berikutnya.",
-      "Siram di malam hari atau dini hari (hindari sprinkler di atas kepala) untuk memberi waktu daun mengering sebelum infeksi dapat terjadi.",
-      "Sebarkan lapisan kompos berukuran 3 hingga 6 inci di bawah pohon, jauhkan dari batang, untuk menutupi tanah dan mencegah penyebaran percikan spora jamur.",
-      "Untuk kontrol terbaik, semprotkan sabun tembaga cair lebih awal, dua minggu sebelum gejala biasanya muncul. Alternatifnya, mulailah aplikasi saat penyakit pertama kali muncul, dan ulangi dengan interval 7 hingga 10 hari hingga bunganya rontok."
+        "Pilih varietas yang tahan jika memungkinkan.",
+        "Sapu daun di bawah pohon dan hancurkan daun yang terinfeksi untuk mengurangi jumlah spora jamur yang tersedia untuk memulai siklus penyakit lagi musim semi berikutnya.",
+        "Siram di malam hari atau dini hari (hindari sprinkler di atas kepala) untuk memberi waktu daun mengering sebelum infeksi dapat terjadi.",
+        "Sebarkan lapisan kompos berukuran 3 hingga 6 inci di bawah pohon, jauhkan dari batang, untuk menutupi tanah dan mencegah penyebaran percikan spora jamur.",
+        "Untuk kontrol terbaik, semprotkan sabun tembaga cair lebih awal, dua minggu sebelum gejala biasanya muncul. Alternatifnya, mulailah aplikasi saat penyakit pertama kali muncul, dan ulangi dengan interval 7 hingga 10 hari hingga bunganya rontok."
     ]
-  }
+}
 ```
 
 `id` = id dari penyakit
