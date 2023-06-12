@@ -1,8 +1,10 @@
 # Introduction
 myPlant Backend (Cloud Comptuting)
 
+
 ## Overview
 Private endpoint designed using Flask framework and firebase as authentication for login and register
+
 
 #### Backend Stack
 
@@ -11,14 +13,16 @@ Private endpoint designed using Flask framework and firebase as authentication f
 - Tensorflow
 - dotenv
 
+
 #### Cloud Stack
 
 - App Engine
 - Cloud Storage
 
-## Install Flask
 
-    python -m pip install flask
+#### Cloud Architecture
+<img src="../Images/Cloud_Architecture.jpg">
+    
 
 ## Run the app
 1. `git clone https://github.com/henryand1/MyPlant.git`
@@ -48,6 +52,7 @@ POST /register
 
 `password` = password user
 
+
 ## Login
 
 ### Request
@@ -67,6 +72,7 @@ POST /login
 `email` = email user
 
 `password` = password user
+
 
 ## Penyakit
 
