@@ -10,8 +10,6 @@ Private endpoint designed using Flask framework and firebase as authentication f
 
 - Flask
 - Firebase
-- Tensorflow
-- dotenv
 
 
 #### Cloud Stack
@@ -25,7 +23,7 @@ Private endpoint designed using Flask framework and firebase as authentication f
     
 
 ## Run the app
-1. `git clone https://github.com/henryand1/MyPlant.git`
+1. `git clone https://github.com/My-Plant/MyPlant-Capstone.git`
 2. `cd CC`
 3. `pip install -r requirements.txt`
 4. `python main.py`
