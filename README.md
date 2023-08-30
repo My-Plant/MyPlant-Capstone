@@ -36,11 +36,11 @@
 
 ## About The Project
 <p>Plant diseases pose a significant threat to global food security and agricultural productivity. They can be caused by pathogens and abiotic factors, resulting in yield losses, reduced crop quality, and economic impacts. To combat these diseases, various strategies are employed, but their efficacy varies depending on the specific disease and plant species involved. Understanding the causes and mechanisms of plant diseases is crucial for developing effective management strategies. To address this problem, our team aims to develop the MyPlant application, which utilizes photos to identify plant diseases, provides descriptions of the detected diseases, and offers solutions to help users overcome them. This application will empower individuals to tackle plant diseases, contributing to improved food security and agricultural sustainability.
-.</p>
+</p>
 
 ## App Overview
 <p>The execution of the MyPlant project has been progressing well, and we have achieved significant milestones. The machine learning model has shown remarkable accuracy in disease identification, successfully implementing APIs for backend and mobile app communication, and the application's user interface has been designed to be user-friendly and accessible to both experts and novice users.
-.</p>
+</p>
 
 ## Documentation
 ### Machine Learning
